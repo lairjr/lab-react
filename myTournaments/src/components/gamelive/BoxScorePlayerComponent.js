@@ -1,6 +1,7 @@
 'use strict';
 
 import React from 'react';
+import { Button } from 'canon-react';
 
 require('styles/gamelive/BoxScorePlayer.sass');
 
@@ -24,7 +25,7 @@ class BoxScorePlayerComponent extends React.Component {
         </td>
         <td>
           {this.state.score}
-          <button class="rs-btn rs-btn-primary">Primary</button>
+          <Button onClick={this.increaseScore}>Add</Button>
         </td>
       </tr>
     );
