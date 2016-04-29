@@ -1,8 +1,8 @@
-const gameLiveReducer = (state, action) => {
+const gameLiveReducer = (state = { name: 'Lair Júnior' }, action) => {
   switch(action.type) {
     case 'PLAYER_SCORE':
-      return Object.assing({}, action.player, {
-        score : action.player.score + 1
+      return Object.assign({}, action.player, {
+        score : action.player.score ? action.player.score + 1 : 1
       });
     default:
       return state;
