@@ -2,14 +2,16 @@ import React from 'react'
 import { Button } from 'canon-react'
 
 const GameLog = ({ gameLog, onLogAdd }) => {
-  let messageField;
+  let messageField, logKey = 0;
   let log = gameLog.map(logMsg => {
+    logKey++;
     return (
-      <div>
-        { logMsg }
+      <div key={logKey}>
+        <span>{ logMsg }</span>
       </div>
     )
   });
+  debugger;
   return (
     <div>
       { log }

@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { PropTypes } from 'react'
 import { Button } from 'canon-react'
 
 const PlayerScore = ({ player, onClick }) => {
@@ -13,6 +13,10 @@ const PlayerScore = ({ player, onClick }) => {
       <Button onClick={() => { onClick(player) }}>Score</Button>
     </div>
   )
+}
+
+PlayerScore.propTypes = {
+  onClick: PropTypes.func.isRequired
 }
 
 export default PlayerScore

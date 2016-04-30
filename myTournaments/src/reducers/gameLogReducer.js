@@ -5,7 +5,6 @@ const gameLogReducer = (state = [], action) => {
         ...state,
         action.message
       ];
-      break;
     default:
       return state;
   }
