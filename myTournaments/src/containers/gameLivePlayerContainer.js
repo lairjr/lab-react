@@ -4,7 +4,7 @@ import PlayerScore from '../components/gamelive/playerScore'
 
 const mapStateToProps = (state) => {
   return {
-    player: state.gameLiveReducer
+    player: state.gameLivePlayerReducer
   }
 }
 
@@ -16,9 +16,9 @@ const mapDispatchToProps = (dispatch) => {
   }
 }
 
-const GameLiveContainer = connect(
+const GameLivePlayerContainer = connect(
   mapStateToProps,
   mapDispatchToProps
 )(PlayerScore)
 
-export default GameLiveContainer
+export default GameLivePlayerContainer

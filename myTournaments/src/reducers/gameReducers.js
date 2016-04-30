@@ -1,10 +1,10 @@
 import { combineReducers } from 'redux'
-import gameLiveReducer from './gameLiveReducer'
+import gameLivePlayerReducer from './gameLivePlayerReducer'
 import gameLogReducer from './gameLogReducer'
 import gameLiveTeamReducer from './gameLiveTeamReducer'
 
 export default combineReducers({
-  gameLiveReducer,
+  gameLivePlayerReducer,
   gameLogReducer,
   gameLiveTeamReducer
 })

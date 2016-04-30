@@ -1,4 +1,4 @@
-const gameLiveReducer = (state = { name: 'Lair Júnior' }, action) => {
+const gameLivePlayerReducer = (state = { name: 'Lair Júnior' }, action) => {
   switch(action.type) {
     case 'PLAYER_SCORE':
       return Object.assign({}, action.player, {
@@ -9,4 +9,4 @@ const gameLiveReducer = (state = { name: 'Lair Júnior' }, action) => {
   }
 }
 
-export default gameLiveReducer
+export default gameLivePlayerReducer
