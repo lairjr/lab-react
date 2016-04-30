@@ -1,10 +1,10 @@
 import { connect } from 'react-redux'
-import scorePlayer from '../actions/gameLiveActions'
+import { scorePlayer } from '../actions/gameLiveActions'
 import PlayerScore from '../components/gamelive/playerScore'
 
 const mapStateToProps = (state) => {
   return {
-    player: state
+    player: state.gameLiveReducer
   }
 }
 

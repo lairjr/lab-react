@@ -1,8 +1,13 @@
-const scorePlayer = (player) => {
+export const scorePlayer = (player) => {
   return {
     type: 'PLAYER_SCORE',
     player: player
   }
 }
 
-export default scorePlayer
+export const gameLog = (message) => {
+  return {
+    type: 'GAME_LOG',
+    message: message
+  }
+}

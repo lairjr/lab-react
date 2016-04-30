@@ -4,9 +4,10 @@ import ReactDOM from 'react-dom'
 import App from './components/Main'
 import { createStore } from 'redux'
 import { Provider } from 'react-redux'
-import gameLiveReducer from './reducers/gameLiveReducer'
+import gameReducers from './reducers/gameReducers'
 
-const gameLiveStore = createStore(gameLiveReducer)
+const gameLiveStore = createStore(gameReducers)
+console.log(gameLiveStore)
 
 // Render the main component into the dom
 ReactDOM.render(<Provider store={gameLiveStore}>
