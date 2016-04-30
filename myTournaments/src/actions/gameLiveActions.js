@@ -1,6 +1,8 @@
-export const scorePlayer = (player) => {
+const scorePlayer = (player) => {
   return {
     type: 'PLAYER_SCORE',
     player: player
   }
 }
+
+export default scorePlayer
