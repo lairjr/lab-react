@@ -3,15 +3,17 @@ import { Button } from 'canon-react'
 
 const PlayerScore = ({ player, onClick }) => {
   return (
-    <div>
-      <h5>
-        Name {player.name}
-      </h5>
-      <h5>
-        Score {player.score}
-      </h5>
-      <Button onClick={() => { onClick(player) }}>Score</Button>
-    </div>
+    <tr>
+      <td className="rs-table-text">
+        { player.name }
+      </td>
+      <td className="rs-table-text">
+        { player.score }
+      </td>
+      <td className="rs-table-text">
+        <Button onClick={() => { onClick(player) }}>Score</Button>
+      </td>
+    </tr>
   )
 }
 
