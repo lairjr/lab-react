@@ -11,12 +11,11 @@ const GameLog = ({ gameLog, onLogAdd }) => {
       </div>
     )
   });
-  debugger;
   return (
     <div>
       { log }
       <label className="rs-control-label">
-        Message:
+        Message
       </label>
       <div className="rs-controls">
         <textarea className="rs-input-xlarge" ref={ msg => { messageField = msg }}></textarea>

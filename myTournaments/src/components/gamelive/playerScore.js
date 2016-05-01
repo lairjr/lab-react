@@ -4,12 +4,12 @@ import { Button } from 'canon-react'
 const PlayerScore = ({ player, onClick }) => {
   return (
     <div>
-      <label className="rs-control-label">
-        Name: {player.name}
-      </label>
-      <label className="rs-control-label">
-        Score: {player.score}
-      </label>
+      <h5>
+        Name {player.name}
+      </h5>
+      <h5>
+        Score {player.score}
+      </h5>
       <Button onClick={() => { onClick(player) }}>Score</Button>
     </div>
   )

@@ -10,12 +10,12 @@ const GameTeamBox = ({ team, onPlayerClick }) => {
   );
   return (
     <div>
-      <label className="rs-control-label">
+      <h3>
         Name: {team.name}
-      </label>
-      <label className="rs-control-label">
+      </h3>
+      <h3>
         Score: {team.score}
-      </label>
+      </h3>
       { players }
     </div>
   )
